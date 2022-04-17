@@ -1,0 +1,53 @@
+.service-container {
+    border: 1px solid #21768b;
+    padding: 10px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 10px 0 10px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.service h3,
+h5,
+p {
+    margin-bottom: 0;
+    margin-top: 3px;
+    color: rgb(37, 37, 61);
+}
+
+.service img {
+    width: 327px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+.service button {
+    background-image: linear-gradient(to right, #2C3E50 0%, #4CA1AF 51%, #2C3E50 100%)
+}
+
+.service button {
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #ffffff;
+    box-shadow: 0 0 20px #eee;
+    border: none;
+    border-radius: 30px;
+}
+
+.service button:hover {
+    background-position: right center;
+    color: rgb(185, 206, 203);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* @media only screen and (max-width: 600px) {
+    .service-container img {
+        width: 278px;
+    }
+} */

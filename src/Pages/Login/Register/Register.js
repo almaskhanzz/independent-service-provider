@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
     const [
@@ -29,6 +30,9 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password);
 
     }
+    const navigateLogin = () => {
+        navigate('/login');
+    }
     return (
         <div className='register-container mx-auto my-4'>
             <h1 className='text-primary text-center'>Please Register</h1>
@@ -50,6 +54,10 @@ const Register = () => {
                     Register
                 </Button>
             </Form>
+            {
+                loading && <Loading />
+            }
+            <p className='mt-3'>Already have an account? <span className='text-primary register-nav' onClick={navigateLogin} >Please Login</span></p>
         </div>
     );
 };

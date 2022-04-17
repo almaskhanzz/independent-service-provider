@@ -1,9 +1,10 @@
 import './login.css';
 import React, { useRef } from 'react';
-import { Button, Form, Spinner } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -45,9 +46,9 @@ const Login = () => {
             </Form>
             <p className='text-danger'>{error?.message}</p>
             {
-                loading && <p><Spinner className=' d-block mx-auto' animation="border" variant="primary" /></p>
+                loading && <Loading />
             }
-            <p className='mt-3'>New here? <span className='text-primary register-nav' onClick={navigateRegister}>Please Register</span></p>
+            <p className='mt-3'>Don't have an account? <span className='text-primary register-nav' onClick={navigateRegister}>Please Register</span></p>
         </div>
     );
 };

@@ -9,6 +9,7 @@ import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import Loading from './Pages/Shared/Loading/Loading';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Checkout />
           </RequireAuth>
         } />
+        <Route path='/loading' element={< Loading />} />
       </Routes>
       <Footer />
     </div>

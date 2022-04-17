@@ -8,10 +8,7 @@ const Home = () => {
             <div>
                 <img className='w-100' src={banner} alt="" />
             </div>
-            <div>
-                <Services />
-            </div>
-
+            <Services />
         </div>
     );
 };

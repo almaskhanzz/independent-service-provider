@@ -23,7 +23,7 @@ p {
 
 
 .service button {
-    background-image: linear-gradient(to right, #2C3E50 0%, #4CA1AF 51%, #2C3E50 100%)
+    background-image: linear-gradient(to right, #2C3E50 0%, #4c75af 51%, #2C3E50 100%)
 }
 
 .service button {
@@ -43,11 +43,3 @@ p {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
-/* @media only screen and (max-width: 600px) {
-    .service-container img {
-        width: 278px;
-    }
-} */

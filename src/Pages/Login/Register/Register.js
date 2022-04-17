@@ -1,3 +1,4 @@
+import './Register.css';
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -29,7 +30,7 @@ const Register = () => {
 
     }
     return (
-        <div className='container w-50 mx-auto my-4'>
+        <div className='container register-container mx-auto my-4'>
             <h1 className='text-primary text-center'>Please Register</h1>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicName">

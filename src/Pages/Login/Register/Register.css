@@ -1,13 +1,9 @@
-.register-nav {
-    cursor: pointer;
-}
-
-.login-container {
+.register-container {
     width: 50%;
 }
 
 @media only screen and (max-width: 600px) {
-    .login-container {
+    .register-container {
         width: 85%;
     }
 }

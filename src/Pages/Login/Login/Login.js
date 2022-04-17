@@ -1,3 +1,4 @@
+import './login.css';
 import React, { useRef } from 'react';
 import { Button, Form, Spinner } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -24,7 +25,7 @@ const Login = () => {
         navigate('/register');
     }
     return (
-        <div className='container w-50 mx-auto my-4'>
+        <div className='container login-container mx-auto my-4'>
             <h1 className='text-primary text-center'>Please Login</h1>
             <Form onSubmit={handleSignIn}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -36,9 +37,6 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
                 <Button variant="primary" type="submit">
                     Login
                 </Button>
@@ -47,7 +45,7 @@ const Login = () => {
             {
                 loading && <p><Spinner className=' d-block mx-auto' animation="border" variant="primary" /></p>
             }
-            <p className='mt-3'>New to Genius Car? <span className='text-danger register-nav' onClick={navigateRegister}>Please Register</span></p>
+            <p className='mt-3'>New here? <span className='text-primary register-nav' onClick={navigateRegister}>Please Register</span></p>
         </div>
     );
 };

@@ -2,24 +2,24 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Header.css';
 const Header = () => {
     const [user] = useAuthState(auth);
+    const navigate = useNavigate();
     const handleSignOut = () => {
         signOut(auth);
+        navigate('/home');
     }
     return (
         <>
             <Navbar collapseOnSelect expand="lg" className='bg' variant="dark" sticky="top">
                 <Container className='py-3'>
-                    <Navbar.Brand className='text-white fs-4' as={Link} to="/">Independent service</Navbar.Brand>
+                    <Navbar.Brand className='' as={Link} to="/"><span className='host-color'>Your</span> <span className='tv-host'>favorite Tv host</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link className='text-white fs-5' as={Link} to="/service">Service</Nav.Link>
-                            <Nav.Link className='text-white fs-5' as={Link} to="/category">Category</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link className='text-white fs-5' as={Link} to="/blogs">Blogs</Nav.Link>

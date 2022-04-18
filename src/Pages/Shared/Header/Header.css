@@ -1,3 +1,15 @@
 .bg {
     background-color: rgb(98, 160, 225);
 }
+
+.host-color {
+    color: #e0f9f0;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tv-host {
+    color: #253f02;
+    font-size: 35px;
+    font-family: fantasy;
+}

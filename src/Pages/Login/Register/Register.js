@@ -12,7 +12,7 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const nameRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
@@ -35,7 +35,7 @@ const Register = () => {
     }
     return (
         <div className='register-container mx-auto my-4'>
-            <h1 className='text-primary text-center'>Please Register</h1>
+            <h1 className='color-log-reg text-center'>Please Register</h1>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
@@ -50,9 +50,9 @@ const Register = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button className="w-50 d-block mx-auto btn-reg" variant="primary" type="submit">
+                <button className="w-50 btn-color d-block mx-auto btn-button" type="submit">
                     Register
-                </Button>
+                </button>
             </Form>
             {
                 loading && <Loading />

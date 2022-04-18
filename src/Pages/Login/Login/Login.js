@@ -39,16 +39,18 @@ const Login = () => {
     }
     const handleResetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        toast('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+
     }
 
     return (
         <div className='login-container mx-auto my-4'>
-            <h1 className='text-primary text-center'>Please Login</h1>
+            <h1 className='color-log-reg text-center'>Please Login</h1>
             <Form onSubmit={handleSignIn}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
@@ -56,15 +58,15 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <div className='d-flex align-items-center justify-content-between'>
                         <Form.Label className='mb-0'>Password</Form.Label>
-                        <p className='mt-2 mb-2'>Forgot Password? <span onClick={handleResetPassword} className='text-primary register-nav' >Reset Password</span></p>
+                        <p className='mt-2 mb-2'><span onClick={handleResetPassword} className='text-primary register-nav' >Reset Password</span></p>
                     </div>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <button className="w-50 btn-color d-block mx-auto btn-button" type="submit">
                     Login
-                </Button>
+                </button>
             </Form>
-            <p className='text-danger'>{error?.message} {error1?.message}</p>
+            <p className='text-danger mt-2'>{error?.message} {error1?.message}</p>
             {
                 loading && <Loading />
             }

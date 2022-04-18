@@ -8,37 +8,37 @@
     },
     {
         "id": 2,
-        "name": "TV Show with Celebrity",
-        "price": "100",
+        "name": "Celebrity Show",
+        "price": "500",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
         "img": "https://i.ibb.co/HGHM9sS/celebrity.jpg"
     },
     {
         "id": 3,
         "name": "Anchoring",
-        "price": "150",
+        "price": "450",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
         "img": "https://i.ibb.co/b2zMbyN/anchoring.jpg"
     },
     {
         "id": 4,
         "name": "Opening Monologue",
-        "price": "180",
+        "price": "700",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
         "img": "https://i.ibb.co/M9ry2Rf/opening.jpg"
     },
     {
         "id": 5,
-        "name": "TV Show with Politicians",
-        "price": "100",
+        "name": "Political Tv show",
+        "price": "1000",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
         "img": "https://i.ibb.co/Jm9zqvX/political-show.jpg"
     },
     {
         "id": 6,
-        "name": "Documentary",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "name": "Documentary show",
+        "price": "800",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa voluptatibus harum ametipsa",
         "img": "https://i.ibb.co/fQZnxXR/documentary.jpg"
     }
 ]

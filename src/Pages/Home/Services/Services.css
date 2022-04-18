@@ -1,6 +1,7 @@
-.services-container h1 {
+.services-heading {
     text-align: center;
-    color: #1b2532;
+    color: rgba(45, 2, 2, 0.82);
+    font-style: italic;
 }
 
 .services {

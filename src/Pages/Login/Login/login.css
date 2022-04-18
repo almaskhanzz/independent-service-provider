@@ -6,6 +6,24 @@
     width: 50%;
 }
 
+.color-log-reg {
+    color: rgb(30, 56, 3)
+}
+
+.btn-button {
+    background-color: #01511e8d;
+    ;
+    color: aliceblue;
+    font-size: 20px;
+    border: none;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+.btn-button:hover {
+    background-color: #02612ead;
+}
+
 @media only screen and (max-width: 600px) {
     .login-container {
         width: 85%;
@@ -14,6 +32,7 @@
 
 @media only screen and (min-width: 1290px) {
     .login-container {
+        width: 35%;
         min-height: 70vh;
     }
 }

@@ -1,24 +1,43 @@
 .service-container {
-    border: 1px solid #21768b;
+    /* border: 1px solid #21768b; */
+    border: none;
     padding: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     width: 350px;
     margin: 10px 0 10px 0;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 6px 0 #cfd3d7, 0 4px 10px 0 #cfd3d7;
 }
 
-.service h3,
-h5,
-p {
-    margin-bottom: 0;
-    margin-top: 3px;
-    color: rgb(37, 37, 61);
+.service {
+    margin-bottom: 10px;
+    /* background-color: #f8fbff;
+    /* border-radius: 5px; */
+    /* padding: 8px;
+    box-shadow: 0 2px 6px 0 #cfd3d7, 0 4px 10px 0 #cfd3d7; */
 }
 
 .service img {
     width: 327px;
     height: 250px;
     border-radius: 10px;
+}
+
+.names {
+    color: #012142;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+    color: rgb(198, 143, 6);
+    margin-top: 15px;
+}
+
+.description {
+    color: #281902;
+    text-align: center;
 }
 
 

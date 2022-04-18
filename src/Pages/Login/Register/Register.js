@@ -50,7 +50,7 @@ const Register = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button className="w-50 d-block mx-auto" variant="primary" type="submit">
+                <Button className="w-50 d-block mx-auto btn-reg" variant="primary" type="submit">
                     Register
                 </Button>
             </Form>

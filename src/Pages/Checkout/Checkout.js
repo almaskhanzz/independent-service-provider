@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import './Checkout.css';
 const Checkout = () => {
+
     const { checkoutId } = useParams();
     return (
         <div>

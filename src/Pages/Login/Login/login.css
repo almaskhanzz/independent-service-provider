@@ -11,3 +11,9 @@
         width: 85%;
     }
 }
+
+@media only screen and (min-width: 1290px) {
+    .login-container {
+        min-height: 70vh;
+    }
+}

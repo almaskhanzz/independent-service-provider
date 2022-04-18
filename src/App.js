@@ -10,6 +10,7 @@ import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Loading from './Pages/Shared/Loading/Loading';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           </RequireAuth>
         } />
         <Route path='/loading' element={< Loading />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
